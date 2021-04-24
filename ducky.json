@@ -152,6 +152,41 @@
                     ]
                 }
             ]
-        }
+        },
+        {
+              "description": "Command + Esc to Command + Tilde",
+              "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                      {
+                          "type": "device_if",
+                          "identifiers": [
+                          {
+                              "vendor_id": 1452,
+                              "product_id": 591
+                          }
+                          ]
+                      }
+                  ],
+                  "from": {
+                    "key_code": "escape",
+                    "modifiers": {
+                      "mandatory": [
+                        "left_command"
+                      ]
+                    }
+                  },
+                  "to": [
+                    {
+                      "key_code": "grave_accent_and_tilde",
+                      "modifiers": [
+                        "left_command"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
     ]
 }
