@@ -19,3 +19,11 @@ Ducky One2 Mini Remapping for Karabiner Elements that emulates the TAP Layout fe
 ![](https://raw.githubusercontent.com/mmshivesh/DuckyOne2Mini-Karabiner/master/images/modified.png)
 
 2. Pressing ⌘ + Esc will act like pressing ⌘ + ~ (Allowing you to cycle through application windows and going backwards in the ⌘ + Tab screen).
+
+Not Pressed:
+
+![](https://raw.githubusercontent.com/mmshivesh/DuckyOne2Mini-Karabiner/master/images/notpressed.png)
+
+⌘ Pressed:
+
+![](https://raw.githubusercontent.com/mmshivesh/DuckyOne2Mini-Karabiner/master/images/pressed.png)
