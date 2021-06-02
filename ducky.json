@@ -6,6 +6,10 @@
             "manipulators": [
                 {
                     "type": "basic",
+                    "parameters": {
+                        "basic.to_if_alone_timeout_milliseconds": 200,
+                        "basic.to_if_held_down_threshold_milliseconds": 600
+                    },
                     "conditions": [
                         {
                             "type": "device_if",
@@ -31,6 +35,12 @@
                             "lazy": true
                         }
                     ],
+                    "to_if_held_down": [
+                        {
+                            "key_code": "left_arrow",
+                            "repeat": true
+                        }
+                    ],
                     "to_if_alone": [
                         {
                             "key_code": "left_arrow"
@@ -44,6 +54,10 @@
             "manipulators": [
                 {
                     "type": "basic",
+                    "parameters": {
+                        "basic.to_if_alone_timeout_milliseconds": 200,
+                        "basic.to_if_held_down_threshold_milliseconds": 600
+                    },
                     "conditions": [
                         {
                             "type": "device_if",
@@ -69,6 +83,12 @@
                             "lazy": true
                         }
                     ],
+                    "to_if_held_down": [
+                        {
+                            "key_code": "up_arrow",
+                            "repeat": true
+                        }
+                    ],
                     "to_if_alone": [
                         {
                             "key_code": "up_arrow"
@@ -82,6 +102,10 @@
             "manipulators": [
                 {
                     "type": "basic",
+                    "parameters": {
+                        "basic.to_if_alone_timeout_milliseconds": 200,
+                        "basic.to_if_held_down_threshold_milliseconds": 600
+                    },
                     "conditions": [
                         {
                             "type": "device_if",
@@ -107,6 +131,12 @@
                             "lazy": true
                         }
                     ],
+                    "to_if_held_down": [
+                        {
+                            "key_code": "down_arrow",
+                            "repeat": true
+                        }
+                    ],
                     "to_if_alone": [
                         {
                             "key_code": "down_arrow"
@@ -120,6 +150,10 @@
             "manipulators": [
                 {
                     "type": "basic",
+                    "parameters": {
+                        "basic.to_if_alone_timeout_milliseconds": 200,
+                        "basic.to_if_held_down_threshold_milliseconds": 600
+                    },
                     "conditions": [
                         {
                             "type": "device_if",
@@ -145,6 +179,12 @@
                             "lazy": true
                         }
                     ],
+                    "to_if_held_down": [
+                        {
+                            "key_code": "right_arrow",
+                            "repeat": true
+                        }
+                    ],
                     "to_if_alone": [
                         {
                             "key_code": "right_arrow"
@@ -154,39 +194,39 @@
             ]
         },
         {
-              "description": "Command + Esc to Command + Tilde",
-              "manipulators": [
-                {
-                    "type": "basic",
-                    "conditions": [
-                      {
-                          "type": "device_if",
-                          "identifiers": [
-                          {
-                              "vendor_id": 1452,
-                              "product_id": 591
-                          }
-                          ]
-                      }
-                  ],
-                  "from": {
+            "description": "Command + Esc to Command + Tilde",
+            "manipulators": [
+            {
+                "type": "basic",
+                "conditions": [
+                    {
+                        "type": "device_if",
+                        "identifiers": [
+                            {
+                                "vendor_id": 1452,
+                                "product_id": 591
+                            }
+                        ]
+                    }
+                ],
+                "from": {
                     "key_code": "escape",
                     "modifiers": {
-                      "mandatory": [
+                        "mandatory": [
                         "left_command"
-                      ]
+                        ]
                     }
-                  },
-                  "to": [
+                },
+                "to": [
                     {
-                      "key_code": "grave_accent_and_tilde",
-                      "modifiers": [
-                        "left_command"
-                      ]
+                        "key_code": "grave_accent_and_tilde",
+                        "modifiers": [
+                            "left_command"
+                        ]
                     }
-                  ]
+                ]
                 }
-              ]
-            }
+            ]
+        }
     ]
 }
